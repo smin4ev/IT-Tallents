@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;temporarySum&apos; in &apos;BiggestRowOrBiggestColIsBigger5.main(...)&apos; to &apos;currentRowSum&apos;&#x0D;&#x0A;- Original project: &apos;MultidimensionalArrays&apos;&#x0D;&#x0A;- Original element: &apos;BiggestRowOrBiggestColIsBigger5.main(String[]).temporarySum&apos;&#x0D;&#x0A;- Renamed element: &apos;temporarySum&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;temporarySum&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{BiggestRowOrBiggestColIsBigger5.java[BiggestRowOrBiggestColIsBigger5~main~\[QString;@temporarySum!277!297!281!292!I!0!false" name="currentRowSum" references="true" stamp="1446733557723" version="1.0"/>
+</session>

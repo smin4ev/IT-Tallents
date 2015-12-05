@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;array&apos; in &apos;MaxSumOfSubMatrix9.main(...)&apos; to &apos;arr&apos;&#x0D;&#x0A;- Original project: &apos;MultidimensionalArrays-Additional&apos;&#x0D;&#x0A;- Original element: &apos;MaxSumOfSubMatrix9.main(String[]).array&apos;&#x0D;&#x0A;- Renamed element: &apos;array&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;array&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{MaxSumOfSubMatrix9.java[MaxSumOfSubMatrix9~main~\[QString;@array!84!236!92!96!\[\[I!0!false" name="arr" references="true" stamp="1446842816853" version="1.0"/>
+</session>

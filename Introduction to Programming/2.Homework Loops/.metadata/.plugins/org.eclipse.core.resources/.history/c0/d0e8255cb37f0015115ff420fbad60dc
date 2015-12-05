@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ChangeBitsAtPosition {
+
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int number = sc.nextInt();
+//		int a = sc.nextInt();
+//		int b = sc.nextInt();
+//		int newNumChangeFirstBit = (number ^ (1<<a));
+//		int newNumChangeSecondBit = (newNumChangeFirstBit ^ (1<<a));
+//		System.out.println(newNumChangeFirstBit);
+//		System.out.println(newNumChangeSecondBit);
+		
+		char c = 101;
+		float d = 2.2f;
+		char  f = '\n';
+		System.out.print(c + " " + f + " " + d);
+		
+		
+	}
+
+}

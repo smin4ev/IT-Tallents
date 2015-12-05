@@ -1,0 +1,36 @@
+
+public class FindingOfKBiggestNumberInArray {
+
+	public static void main(String[] args) {
+		int[] array = {43,5,45,65,5,9,6,21,31};
+		int temp = 0;//пази елементът, чиито място трябва да бъде заето от поредното най-голямо число
+		int biggesNum = Integer.MIN_VALUE;//пази най-големия елемент при всяко завъртане
+		int currentBigIndex = 0;//пази индекса на текущия най-голям елемент
+		int k = 6;//К-ти най-голям елемент(трябва да се въвежда от конзолата)
+		int nextBigNum = 0;//брояч за следващото най-голямо число от редицата
+		while(nextBigNum<k){
+			for (int i = nextBigNum; i < array.length; i++) {
+				if(array[i]>biggesNum){
+					biggesNum = array[i];
+					currentBigIndex = i;
+				}	
+			}
+			temp = array[nextBigNum];//поредният елемент в редицата се запазва във временна променлива
+			array[nextBigNum] = biggesNum;//съответния най-голям елемент си заема поредното място в масива
+			array[currentBigIndex] = temp;//елементът, който е бил на заетото място, отива на мястото на текущия най-голям
+			nextBigNum++;
+			biggesNum = Integer.MIN_VALUE;
+			//В тези 4 реда може да се види как се преподрежда масива
+//			for (int i = 0; i < array.length; i++) {
+//				System.out.print(array[i] + " ");
+//			}
+//			System.out.println();
+		}
+		for (int i = 0; i < k; i++) {
+			System.out.print(array[i] + " ");
+		}
+		 System.out.println("К-то най-голямо число е " + array[k-1]);
+
+	}
+
+}
