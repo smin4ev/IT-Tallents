@@ -1,0 +1,18 @@
+
+class ChangeThreeNumberValues6 {
+
+	public static void main(String[] args) {
+	    int firstNum = 5;
+	    int secondNum = 6;
+	    int thirdNum = 7;
+	    
+	    int tempNum = firstNum;
+	    firstNum = secondNum;
+	    secondNum = thirdNum;
+	    thirdNum = tempNum;
+	    
+	    System.out.println();
+	    		
+	}
+
+}

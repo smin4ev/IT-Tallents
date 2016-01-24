@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ChangeBitsAtPosition {
+
+	public static void main(String[] args) {
+		//Scanner sc = new Scanner(System.in);
+		//int number = sc.nextInt();
+		int a = 4;
+		int b = 5;
+		//int newNum = (number ^ (1<<a));
+		//int test = number ^ a;
+		int test = 1<<2;
+		System.out.println(test);
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ArithmeticWithTwoNumbers {
+
+	public static void main(String[] args) {
+		System.out.println("Enter two different integer numbers:");
+		Scanner sc = new Scanner(System.in);
+		int firstNum = sc.nextInt();
+		int secondNum = sc.nextInt();
+		while(firstNum == secondNum){
+			System.out.println("Please enter not-equal numbers:");
+			firstNum = sc.nextInt();
+			secondNum = sc.nextInt();
+		}
+		
+		int sum = firstNum+secondNum;
+		int diff = firstNum - secondNum;
+		int product = firstNum*secondNum;
+		int intDiv = firstNum/secondNum;
+		int res = firstNum%secondNum;
+		System.out.println("Amount is " + sum + ", difference by subtracting is " + diff + 
+				", product is " + product + ", integer division is " + intDiv + 
+				" and division with remainder is " +res);
+
+	}
+
+}

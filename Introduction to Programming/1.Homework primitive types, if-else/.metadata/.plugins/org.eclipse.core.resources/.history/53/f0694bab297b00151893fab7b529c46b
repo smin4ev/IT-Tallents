@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class NextDay12 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter 3 numbers for day, month and year:");
+		Scanner sc = new Scanner(System.in);
+		int day = sc.nextInt();
+		int month = sc.nextInt();
+		int year = sc.nextInt();
+		
+		while(year<0){
+			System.out.println("Please enter valid value for year");
+			year = sc.nextInt();
+		}
+		
+		while(day<0 || day>31){
+			System.out.println("Please enter valid value for day");
+			day = sc.nextInt();
+		}
+		
+		while(month<0 || month>12){
+			System.out.println("Please enter valid value for month");
+			month = sc.nextInt();
+		}
+		if(month == 4 || month == 6 || month == 9 || month == 11 ){
+			while(day>30){
+				System.out.println("Please enter valid day<=30");
+				day = sc.nextInt();
+			}	
+		} else if((month == 2) && ((year%400 == 0) && (year%100 == 0))  || (year%4 ==0)){
+		     while(day>29){
+		    	 System.out.println("Please enter valid day<=29");
+		    	 day = sc.nextInt();
+		     }
+		}else if((month == 2) && (year%4 != 0)){
+			System.out.println("Please enter valid day <=28");
+			day = sc.nextInt();
+		}else{
+			System.out.println("Please enter valid day <=30");
+			day = sc.nextInt();
+		}
+	}
+}	
+
+
